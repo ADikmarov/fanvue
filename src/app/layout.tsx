@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeRegistry options={{ key: "mui" }}>
+        <ThemeRegistry
+          options={{ key: "mui", fontFamily: inter.style.fontFamily }}
+        >
           <TrpcProvider>{children}</TrpcProvider>
         </ThemeRegistry>
       </body>
