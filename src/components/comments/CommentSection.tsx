@@ -62,6 +62,10 @@ export const CommentSection = ({ postId }: CommentSectionProps) => {
       onSuccess: () => {
         setNewComment("");
         utils.getComments.invalidate({ postId });
+
+        // I added this comment after completing the challenge,
+        // but definitely need to add analytical events,
+        // like window.dataLayer.push
       },
     });
 
